@@ -8,7 +8,7 @@ const guess=document.querySelector('input');
 const btn=document.querySelector('.btn ');
 let newWord="";
 let randomWord="";
-
+//what is guess.classList.toggle('hidden')
 btn.addEventListener('click' , ()=>{
     
      //(join(",")--join will join with delimiter as ,
@@ -18,7 +18,7 @@ btn.addEventListener('click' , ()=>{
         newWord= words[Math.floor(Math.random()*words.length)];
         randomWord=doShuffle(newWord.split("")).join("");
         btn.innerHTML="Guess the word";
-       // guess.classList.toggle('hidden');
+        guess.classList.toggle('hidden');
        
       msg.innerHTML=`Guesss the word :  ${randomWord}`;}
 
@@ -31,6 +31,7 @@ btn.addEventListener('click' , ()=>{
             msg.innerHTML="Try again";
         }
         play=false;
+        guess.classList.toggle('hidden');
         btn.innerHTML="start again";
         guess.value="";
 
