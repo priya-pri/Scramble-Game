@@ -1,0 +1,48 @@
+
+
+
+header{
+    height:120px;
+    width:100%;
+    background-color:#54f6ca;
+    text-align:center;
+    color: blue;
+    font-family:'Carter One',cursive;
+    font-size:1.8rem;
+    letter-spacing:15px;
+    text-shadow:0 1px 0 #efefef,
+                0 2px 0 #efefef,
+                0 3px 0 #efefef,
+                0 4px 0 #efefef,
+                0 30px 5px rgba(0,0,0,.1);
+
+}
+section{
+    height:500px;
+    width:100%;
+    background-color:#544444;
+    display:flex;
+    justify-content:center;
+    padding:15px 0;
+
+}
+
+.gameArea{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    margin:0 auto;
+    box-sizing: content-box;
+    color: blue;
+    height:400px;
+    width:50%;
+    padding:20px 0;
+    background-color:#54f6ca;
+    align-items:center;
+
+
+}
+
+.btn{
+    margin:10px;
+}
